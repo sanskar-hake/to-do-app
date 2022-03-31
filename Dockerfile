@@ -15,4 +15,4 @@ RUN npm ci --production
 COPY . .
 
 # build the folder
-CMD ["npm", "run", "build"]
+CMD ["npm", "run", "start"]
