@@ -19,11 +19,12 @@ pipeline
                  	}
                   }
          }
-//          stage('Deployment and Service') {
-//                steps{
-//                  sh "kubectl apply -f wallet_deployment.yaml"
-//                }
-//          }
+         stage('Deployment and Service') {
+               steps{
+                 sh "kubectl apply -f to-do-app-deployment.yaml"
+                 sh "kubectl apply -f to-do-app-service.yaml"
+               }
+         }
 
     }
 }
